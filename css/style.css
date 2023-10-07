@@ -1,0 +1,95 @@
+.slide{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, .4);
+    animation: animateSlider 2s;
+    transition: 1s ease-in-out;
+}
+.prev{
+    /* سهم العنصر السابق */
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9;
+    color: #FFF;
+}
+@keyframes animateSlider {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes animateSliderContent {
+    from{
+        transform: translate(-50%, -50%) scale(0);
+    }
+    to{
+        transform:  translate(-50%, -50%) scale(1);
+    }
+}
+
+.slide .slide-item{
+    background-color: red;
+    /* مشان اجيب العنصر في النص */
+    position:absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animateSliderContent 3s  ;
+
+}
+.item{
+    cursor: pointer;
+}
+
+.slide img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+.next{
+    /* سهم العنصر التالي */
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9;
+    color: #FFF;
+}
+
+.number{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    z-index: 9;
+    background-color: #FFF;
+    /* background-color: black; */
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.active{
+    display: block;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #FFF;
+    cursor: pointer;
+}
+
