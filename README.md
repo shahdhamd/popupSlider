@@ -1,7 +1,7 @@
 
 ## popup slider
 
-<img src="all.jpg">
+<img src="images/all.jpg">
 
 - When you click on an image , it opens in a larger view 
 
